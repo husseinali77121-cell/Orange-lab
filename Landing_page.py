@@ -19,7 +19,6 @@ st.markdown("""
   .block-container { padding: 0 !important; max-width: 100% !important; }
   #MainMenu, footer, header { visibility: hidden; }
 
-  /* ── HERO ── */
   .hero {
     background: linear-gradient(160deg, #111 0%, #1a1a1a 40%, #FF6B00 100%);
     padding: 48px 24px 40px;
@@ -74,7 +73,6 @@ st.markdown("""
     transition: transform 0.2s;
   }
 
-  /* ── BADGE STRIP ── */
   .badge-strip {
     background: #FF6B00;
     padding: 12px 20px;
@@ -86,7 +84,6 @@ st.markdown("""
     font-size: 12px; font-weight: 700;
   }
 
-  /* ── SECTIONS ── */
   .section { padding: 32px 20px; max-width: 640px; margin: 0 auto; }
   .section-title {
     font-size: 20px; font-weight: 800; color: #FF6B00;
@@ -94,7 +91,6 @@ st.markdown("""
     display: flex; align-items: center; justify-content: center; gap: 10px;
   }
 
-  /* ── WHY CARDS ── */
   .why-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
   .why-card {
     background: #1a1a1a; border-radius: 16px;
@@ -107,7 +103,6 @@ st.markdown("""
   .why-title { font-size: 13px; font-weight: 700; color: #FF6B00; margin-bottom: 4px; }
   .why-desc { font-size: 11px; color: #888; line-height: 1.5; }
 
-  /* ── SERVICES ── */
   .services-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; }
   .service-chip {
     background: #1a1a1a; border: 1px solid #2a2a2a;
@@ -117,7 +112,6 @@ st.markdown("""
   }
   .service-chip span { font-size: 18px; }
 
-  /* ── DISCOUNTS ── */
   .disc-list { display: flex; flex-direction: column; gap: 10px; }
   .disc-item {
     background: linear-gradient(90deg, #1a1a1a, #222);
@@ -132,7 +126,6 @@ st.markdown("""
     font-size: 15px; font-weight: 900;
   }
 
-  /* ── HOME VISIT BANNER ── */
   .hv-banner {
     background: linear-gradient(135deg, #FF6B00, #FF9A3C);
     border-radius: 20px; padding: 28px 22px;
@@ -148,7 +141,6 @@ st.markdown("""
     box-shadow: 0 6px 20px rgba(0,0,0,0.2);
   }
 
-  /* ── LOCATION ── */
   .location-card {
     background: #1a1a1a; border-radius: 16px;
     padding: 20px; border: 1px solid #2a2a2a;
@@ -167,7 +159,6 @@ st.markdown("""
     margin-top: 14px;
   }
 
-  /* ── FOOTER ── */
   .footer {
     background: #111; padding: 28px 20px;
     text-align: center; border-top: 1px solid #222;
@@ -176,7 +167,6 @@ st.markdown("""
   .footer-logo { font-size: 20px; font-weight: 900; color: #FF6B00; margin-bottom: 8px; }
   .footer-sub { font-size: 12px; color: #555; }
 
-  /* ── FLOATING WA ── */
   .floating-wa {
     position: fixed; bottom: 24px; left: 20px;
     background: #25D366; color: #fff !important;
@@ -194,19 +184,17 @@ st.markdown("""
   div[data-testid="stButton"] { display: none; }
 </style>
 
-<!-- HERO -->
 <div class="hero">
   <div class="logo-ring"><div class="logo-inner">🔬</div></div>
   <div class="hero-title">ORANGE LAB</div>
   <div class="hero-sub">معمل أورانج لاب للتحاليل الطبية</div>
-  <div class="hero-tagline">تتائجكم هي رأيكم أهم — نتائج دقيقة بأعلى معايير الجودة</div>
+  <div class="hero-tagline">نتائجكم هي رأيكم أهم — نتائج دقيقة بأعلى معايير الجودة</div>
   <div class="cta-group">
     <a href="https://wa.me/201097902820" target="_blank" class="cta-wa">📱 تواصل واتساب</a>
     <a href="tel:01097902820" class="cta-call">📞 اتصل بنا</a>
   </div>
 </div>
 
-<!-- BADGE STRIP -->
 <div class="badge-strip">
   <div class="badge">🏠 زيارات منزلية</div>
   <div class="badge">⚡ نتائج سريعة</div>
@@ -215,7 +203,6 @@ st.markdown("""
   <div class="badge">🎁 عروض مستمرة</div>
 </div>
 
-<!-- WHY US -->
 <div class="section">
   <div class="section-title">⭐ لماذا تختار أورانج لاب؟</div>
   <div class="why-grid">
@@ -242,7 +229,6 @@ st.markdown("""
   </div>
 </div>
 
-<!-- SERVICES -->
 <div class="section" style="padding-top:0">
   <div class="section-title">🧪 خدماتنا</div>
   <div class="services-grid">
@@ -257,7 +243,6 @@ st.markdown("""
   </div>
 </div>
 
-<!-- DISCOUNTS -->
 <div class="section" style="padding-top:0">
   <div class="section-title">🎁 خصوماتنا</div>
   <div class="disc-list">
@@ -284,7 +269,6 @@ st.markdown("""
   </div>
 </div>
 
-<!-- HOME VISIT BANNER -->
 <div class="hv-banner">
   <div class="hv-title">🏠 خدمة الزيارات المنزلية</div>
   <div class="hv-sub">ماتتعبش — احنا بنيجي لك!<br>سحب العينات من منزلك بكل راحة وأمان</div>
@@ -293,7 +277,6 @@ st.markdown("""
   </a>
 </div>
 
-<!-- LOCATION -->
 <div class="section">
   <div class="section-title">📍 موقعنا</div>
   <div class="location-card">
@@ -318,12 +301,10 @@ st.markdown("""
   </div>
 </div>
 
-<!-- FOOTER -->
 <div class="footer">
   <div class="footer-logo">🟠 ORANGE LAB</div>
   <div class="footer-sub">معمل أورانج لاب للتحاليل الطبية<br>© 2026 جميع الحقوق محفوظة</div>
 </div>
 
-<!-- FLOATING WHATSAPP -->
 <a href="https://wa.me/201097902820" target="_blank" class="floating-wa">💬</a>
 """, unsafe_allow_html=True)
