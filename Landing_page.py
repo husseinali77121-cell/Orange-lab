@@ -49,6 +49,10 @@ st.markdown("""
   .loc-icon { font-size: 22px; margin-top: 2px; flex-shrink: 0; }
   .loc-text { font-size: 13px; color: #ccc; line-height: 1.7; }
   .loc-link { display: block; background: #FF6B00; color: #fff !important; text-decoration: none; text-align: center; padding: 12px; border-radius: 12px; font-weight: 700; font-size: 14px; margin-top: 14px; }
+  
+  /* تم إضافة هذا السطر لحل مشكلة أرقام الهواتف */
+  .phone-link { color: #FF6B00 !important; font-weight: 700; text-decoration: none; margin: 0 5px; }
+  
   .footer { background: #111; padding: 28px 20px; text-align: center; border-top: 1px solid #222; margin-top: 32px; }
   .footer-logo { font-size: 20px; font-weight: 900; color: #FF6B00; margin-bottom: 8px; }
   .footer-sub { font-size: 12px; color: #555; }
@@ -162,10 +166,10 @@ st.markdown("""
     </div>
     <div class="location-row">
       <div class="loc-icon">📞</div>
-      <div class="loc-text">
-        <a href="tel:0236969125" style="color:#FF6B00;font-weight:700;text-decoration:none">02 3696 9125</a>
-          
-        <a href="tel:01097902820" style="color:#FF6B00;font-weight:700;text-decoration:none">010 9790 2820</a>
+      <div class="loc-text" style="direction: ltr; text-align: right;">
+        <a href="tel:0236969125" class="phone-link">02 3696 9125</a>
+        |
+        <a href="tel:01097902820" class="phone-link">010 9790 2820</a>
       </div>
     </div>
     <a href="https://maps.app.goo.gl/azH46Kc4YfJhoYVPA" target="_blank" class="loc-link">
