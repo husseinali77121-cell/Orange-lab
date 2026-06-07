@@ -7,7 +7,8 @@ st.set_page_config(
     initial_sidebar_state="collapsed",
 )
 
-st.markdown("""
+# وضعنا التصميم بالكامل داخل هذا المتغير
+design_code = """
 <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800;900&display=swap" rel="stylesheet">
 <style>
   html, body, [class*="css"] { font-family: 'Cairo', sans-serif !important; direction: rtl; background: #0a0a0a; color: #fff; }
@@ -49,10 +50,7 @@ st.markdown("""
   .loc-icon { font-size: 22px; margin-top: 2px; flex-shrink: 0; }
   .loc-text { font-size: 13px; color: #ccc; line-height: 1.7; }
   .loc-link { display: block; background: #FF6B00; color: #fff !important; text-decoration: none; text-align: center; padding: 12px; border-radius: 12px; font-weight: 700; font-size: 14px; margin-top: 14px; }
-  
-  /* تم إضافة هذا السطر لحل مشكلة أرقام الهواتف */
   .phone-link { color: #FF6B00 !important; font-weight: 700; text-decoration: none; margin: 0 5px; }
-  
   .footer { background: #111; padding: 28px 20px; text-align: center; border-top: 1px solid #222; margin-top: 32px; }
   .footer-logo { font-size: 20px; font-weight: 900; color: #FF6B00; margin-bottom: 8px; }
   .footer-sub { font-size: 12px; color: #555; }
@@ -184,4 +182,7 @@ st.markdown("""
 </div>
 
 <a href="https://wa.me/201097902820" target="_blank" class="floating-wa">💬</a>
-""", unsafe_allow_html=True)
+"""
+
+# هنا السر: الدالة replace تقوم بمسح أي مسافات أو أسطر تسبب المشكلة قبل العرض
+st.markdown(design_code.replace('\n', ''), unsafe_allow_html=True)
